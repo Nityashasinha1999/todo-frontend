@@ -16,7 +16,7 @@ function Home() {
   const [editDesc, setEditDesc] = useState("");
   const [editStatus, setEditStatus] = useState("");
   const [edit, setEdit] = useState(false);
-
+  const [deleted, setDeleted] = useState(false)
   const submit = (e) => {
     e.preventDefault();
     if (edit === true) {
@@ -200,6 +200,8 @@ function Home() {
 }
         </div>
       </div>
+
+
       {display ? (
         <div
           class="modal fade"
@@ -302,7 +304,7 @@ function Home() {
                           edit ? setEditStatus(false) : setStatus(false);
                         }}
                       />
-                      <label for="javascript">Todo</label>
+                      <label for="javascript">To do</label>
                     </div>
                   </div>
                   <button
