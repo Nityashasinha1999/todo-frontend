@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.home__wrap{
+  background-image: url("./img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
+  height: 100%;
+  padding-top: 70px;
+}
+.add__icon path{
+  stroke: black;
+}
+svg.add__icon {
+  border: 2px solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container{
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+.flex{
   display: flex;
-  flex-direction: column;
+}
+.items-center{
+  align-items: center;
+}
+.gap-40{
+  gap: 40px;
+}
+.add__w{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+.add__task{
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px 20px;
+  width: 50%;
 
-.App-link {
-  color: #61dafb;
 }
+.button__add{
+ padding: 12px 16px;
+ font-size: 16px;
+ font-weight: bold;
+ display: block;
+ float: right;
+}
+.text__add{
+  font-size: 30px;
+  font-weight: bold;
+}
+.form__add input{
+  font-size: 16px;
+}
+.form__add label{
+  margin-top: 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.form__add .status, .form__add label{
+  font-size: 16px;
+}
+.status__input{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.status__input input, .status__input label{
+  margin: 0px;
+}
+.status__wrap{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.close__btn{
+  position: absolute;
+  top: -10px;
+  transform: rotate(45deg);
+  opacity: 0.8 !important;
+  right: -10px;
+  /* background-color: white !important;
+  border-radius: 50%;
+  border: 2px solid black !important; */
+}
+.modal{
+  display:  block !important;
+}
+.close__btn svg{
+  border: 1px solid black !important;
+}
+.icons__btn{
+  outline: none;
+  border: none;
+  background: none;
+}
+.submit__btn{
+  font-size: 16px;
+  font-weight: 700;
+}
+.table-striped > tbody > tr{
+  font-size: 16px;
+}
+.table-striped > thead > tr{
+  font-size: 20px;
+  background-color: azure !important;
+}
+.table-striped>tbody>tr:nth-of-type(even){
+  background-color: grey !important;
+}
+.table__todo{
+  margin-top: 40px;
 }
