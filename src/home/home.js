@@ -16,7 +16,6 @@ function Home() {
   const [editDesc, setEditDesc] = useState("");
   const [editStatus, setEditStatus] = useState("");
   const [edit, setEdit] = useState(false);
-  const [deleted, setDeleted] = useState(false)
   const submit = (e) => {
     e.preventDefault();
     if (edit === true) {
